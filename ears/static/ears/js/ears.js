@@ -35,11 +35,11 @@ $(function() {
             oscillator.frequency.value = v*root;
             if(running) {
                 oscillator.disconnect(gainNode);
-                oscillator.noteOff(0);
+                //oscillator.noteOff(0);
             }
             else {
                 oscillator.connect(gainNode);
-                oscillator.noteOn(0);
+                //oscillator.noteOn(0);
             }
             running = !running;
         });
