@@ -20,4 +20,4 @@ urlpatterns = patterns('',
 # only runs in DEBUG
 urlpatterns += staticfiles_urlpatterns()
 
-from coffin.conf.urls.defaults import *
+#from coffin.conf.urls.defaults import *

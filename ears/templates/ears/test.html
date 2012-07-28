@@ -1,2 +1,26 @@
 {% extends 'ears/base.html' %}
 
+{% block content %}
+    <div class="hero-unit">
+        <h1>Welcome to Ear Training!</h1>
+        <p><em>This is a proof of concept. If both the audio and sheet music generation works, you will be able to use the real site when it deploys.</p></em></div>
+
+    <div class="row-fluid">
+        <div class="span6 well">
+            <h2>1. Do you hear sounds?</h2>
+            <p>Click the buttons below to hear the justly tuned intervals. Click them again to stop</p>
+            <form>
+                <label for="root">Root</label>
+                <input type="text" id="root"></input>
+                <label for="intervals">Intervals</label>
+                <div id="intervals" class="btn-group" data-toggle="button-radio">
+                </div>
+            </form>
+        </div>
+        <div class="span6 well">
+            <h2>2. Do you see music?</h2>
+        </div>
+    </div>
+
+    {% endblock %}
+
